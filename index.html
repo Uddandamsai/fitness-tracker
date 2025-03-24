@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div class="header">
+		<img src="https://media-hosting.imagekit.io//cb538f22c9c94991/download.png?Expires=1837337696&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yqbBx2rCL3OD2wyUrClTvZscufhPycIWYyWW2feqUY74L4fxNr0rZGxTL6Jfmz0619CvXyN9W~ZxJxJYvf4tA754tKTEQvvmsUOhZ7MCBHuhSuZkTvqdEene3-PuXLWs1KVsLly50C4rBH7-E2XaTQ-fy8GkSsIX1niPqBstSIAnIA~vXBcDXLk5aK7C8DVKxVrDEzplzWpJzWDQzcbpxEZqgEbnczZXedSJdDzYEuWjz0ZPGDQT8S-i5HsLPaRPO3UqqQl31KWTPcV5rJ6s7UYo8NgMd0gOcbUbSfDcYin2DEGEmze7CHHf47-loMqeQXzX9XJh3jHkMjWnYBTtjg__" alt="pic of fitness " class="image">
+		<h1 class="title">Fitness Tracker</h1>
+	</div>
+    <div class="container">
+        <div class="left-section">
+            <h2 class="h2">User Input</h2>
+            <form id="fitnessForm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="bmi">BMI:</label>
+                <input type="number" id="bmi" name="bmi" step="0.1" required>
+
+                <label for="duration">Duration (min):</label>
+                <input type="number" id="duration" name="duration" required>
+
+                <label for="heartRate">Heart Rate:</label>
+                <input type="number" id="heartRate" name="heartRate" required>
+
+                <label for="bodyTemperature">Body Temperature (°C):</label>
+                <input type="number" id="bodyTemperature" name="bodyTemperature" step="0.1" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+
+        <div class="right-section">
+            <h2 class="h2">Personal Fitness Tracker</h2>
+			<p class="p">A fitness tracker is a wearable device that monitors your physical activities and provides data on your fitness progress. It tracks metrics such as steps taken, distance covered, calories burned, heart rate, sleep patterns, and more.</p>
+            <h3 class="h2">Your Parameters</h3>
+            <table id="parametersTable">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+            </table>
+
+            <h3 class="h2">Prediction</h3>
+            <p id="caloriesBurnt">Calories Burnt: <span id="caloriesValue">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
