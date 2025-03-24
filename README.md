@@ -1,0 +1,2 @@
+In today's fast-paced world, the pursuit of health and fitness has become more important than ever. With the rise of sedentary lifestyles and increased levels of stress, many individuals find it challenging to stay physically active and maintain a healthy lifestyle. However, the desire for improved well-being, weight management, and overall fitness continues to grow, driving the need for effective solutions that can support and guide individuals on their fitness journeys.
+so here i'm using STREAMLIT as Forntend and PYTHON as Backend
